@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABF-AUTO | Phụ kiện ô tô chính hãng</title>
+  <meta name="description" content="Shop phụ kiện ô tô ABF-AUTO: nẹp viền chân kính, ốp bước chân, vè che mưa, thảm lót sàn... hơn 360 mặt hàng." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">ABF<span>-AUTO</span></a>
+
+      <form class="search" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="Tìm kiếm sản phẩm trong Shop" aria-label="Tìm kiếm sản phẩm" />
+        <button type="submit">Tìm</button>
+      </form>
+
+      <button class="cart-btn" id="openCart" type="button">
+        Giỏ hàng
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <div class="tabs-inner">
+      <a class="tab active" href="index.html">Shop</a>
+      <a class="tab" href="shop.html">Sản phẩm <span class="new">New</span></a>
+      <a class="tab" href="about.html">Danh mục hàng</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="shop-card">
+      <div class="avatar">ABF</div>
+      <div class="shop-info">
+        <h1>ABF-AUTO</h1>
+        <div class="online">Online 22 phút trước</div>
+        <div class="shop-meta">
+          <span>⭐ <b>4.7/5.0</b></span>
+          <span>|</span>
+          <span><b>31,7k</b> Người theo dõi</span>
+          <span>|</span>
+          <span><b id="totalProducts">0</b> sản phẩm</span>
+        </div>
+      </div>
+      <div class="shop-actions">
+        <button class="btn-outline" type="button" id="followBtn">Yêu thích</button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div class="chips" id="categoryChips"></div>
+
+      <div class="filters">
+        <div class="filter-group">
+          <label for="modelFilter">Dòng xe</label>
+          <select id="modelFilter">
+            <option value="">Tất cả dòng xe</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="priceFilter">Khoảng giá</label>
+          <select id="priceFilter">
+            <option value="">Tất cả</option>
+            <option value="0-200000">Dưới 200.000đ</option>
+            <option value="200000-500000">200.000đ - 500.000đ</option>
+            <option value="500000-1000000">500.000đ - 1.000.000đ</option>
+            <option value="1000000-99999999">Trên 1.000.000đ</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="sortFilter">Sắp xếp</label>
+          <select id="sortFilter">
+            <option value="popular">Phổ biến</option>
+            <option value="price-asc">Giá thấp đến cao</option>
+            <option value="price-desc">Giá cao đến thấp</option>
+            <option value="rating">Đánh giá cao</option>
+            <option value="name">Tên A - Z</option>
+          </select>
+        </div>
+
+        <span class="result-count">Tìm thấy <b id="resultCount">0</b> sản phẩm</span>
+      </div>
+    </section>
+
+    <div class="section-title">
+      <h2 id="listTitle">Gợi ý cho bạn</h2>
+      <span id="pageInfo"></span>
+    </div>
+
+    <div class="grid" id="productGrid"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p><b>ABF-AUTO</b> — Phụ kiện ô tô chính hãng · Hotline 1900 0000 · Giao hàng toàn quốc</p>
+    <p>© 2026 ABF-AUTO. Trang demo, dữ liệu sản phẩm được tạo tự động.</p>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="cartDrawer" aria-label="Giỏ hàng">
+    <div class="drawer-head">
+      <h3>Giỏ hàng của bạn</h3>
+      <button class="icon-btn" id="closeCart" type="button" aria-label="Đóng giỏ hàng">×</button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot">
+      <div class="cart-msg" id="cartMsg" role="status"></div>
+      <div class="total-row">
+        <span>Tổng cộng</span>
+        <b id="cartTotal">0đ</b>
+      </div>
+      <button class="btn-checkout" id="checkoutBtn" type="button">Tiến hành đặt hàng</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

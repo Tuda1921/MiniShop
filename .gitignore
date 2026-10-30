@@ -1,0 +1,12 @@
+# Hệ điều hành / trình soạn thảo
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Nhật ký, file tạm
+*.log
+*.tmp
+.tmp-*
+node_modules/
