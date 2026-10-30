@@ -2,6 +2,8 @@
 
 Website bán phụ kiện ô tô tĩnh (HTML/CSS/JS thuần, không build, không phụ thuộc thư viện ngoài).
 
+**Xem trực tiếp:** https://tuda1921.github.io/MiniShop/
+
 ## Các trang
 
 | Trang | File | Mô tả |
